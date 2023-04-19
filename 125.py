@@ -14,10 +14,10 @@ window.title("Roll a Die.")
 label = Label(text='Roll a 6 sided die.', font=("", 15))
 label.place(y=20, relwidth=1)
 
-button = Button(text='Roll!', command=roll_die, anchor='center', width=10)
-button.place(relx=0.5, y=65, anchor=CENTER)
+button = Button(text='Roll!', command=roll_die)
+button.place(relx=0.5, y=65, anchor='center', width=50)
 
 output = Message(text="", bg='white', font=("", 15))
-output.place(relx=0.5, y=100, width=30, anchor=CENTER)
+output.place(relx=0.5, y=100, width=30, anchor='center')
 
 window.mainloop()
