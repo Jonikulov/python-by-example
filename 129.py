@@ -2,7 +2,7 @@
 
 from tkinter import *
 
-def add():
+def add_number():
     num = entry_box.get()
     if num.isdigit():
         entry_box.delete(0, END)
@@ -10,21 +10,22 @@ def add():
     else:
         entry_box.delete(0, END)
 
-def clear():
+def clear_list():
     num_list.delete(0, END)
 
 window = Tk()
 window.geometry("300x250")
+window.title("Number List")
 
 entry_box = Entry(font=('', 15), justify='center')
 entry_box.place(relx=0.5, y=25, anchor='center')
 entry_box.focus()
 
-add_buttton = Button(text='Add', command=add, width=10, font=('', 11),
+add_buttton = Button(text='Add', command=add_number, width=10, font=('', 11),
                     bg='green', fg='white')
 add_buttton.place(relx=0.3, y=60, anchor='center')
 
-clear_button = Button(text='Clear', command=clear, width=10, font=('', 11),
+clear_button = Button(text='Clear', command=clear_list, width=10, font=('', 11),
                     bg='red', fg='white')
 clear_button.place(relx=0.7, y=60, anchor='center')
 
