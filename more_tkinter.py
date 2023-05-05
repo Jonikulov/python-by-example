@@ -32,7 +32,7 @@ def clicked():
         logoimage.image = photo
 
     logoimage["image"] = photo
-    logoimage.update()
+    # logoimage.update()
 
 click_btn = Button(text="Click", command=clicked)
 click_btn.place(x=400, y=150)
