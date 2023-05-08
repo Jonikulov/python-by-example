@@ -42,5 +42,5 @@ while selection != 5:
     
     selection = int(input(menu))
 
-# con.commit()
+con.commit()
 con.close()

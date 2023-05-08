@@ -55,5 +55,5 @@ cur.execute("SELECT * FROM employees")
 for x in cur.fetchall():
     print(x)
 
-# con.commit()
+con.commit()
 con.close()
